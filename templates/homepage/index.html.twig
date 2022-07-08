@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomepageController!{% endblock %}
+
+{% block body %}
+    {% if form is defined %}
+        {{ form(form) }}
+    {% endif %}
+    {% if data is defined %}
+        {{ dump(data) }}
+    {% endif %}
+{% endblock %}
